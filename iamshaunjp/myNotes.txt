@@ -1,0 +1,10 @@
+ tsc sandbox.ts
+ tsc sandbox.ts -w
+ tsc --init             //create tsconfig.json
+------------------------------------------------
+
+//--------tsconfig.json setting
+"outDir": "./public"
+"rootDir":"./src"
+"include": ["src"]          //create js file only ts files in src
+------------------------------------------------

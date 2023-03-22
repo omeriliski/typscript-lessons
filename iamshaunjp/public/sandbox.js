@@ -53,3 +53,26 @@ console.log("------------------any-------------------------");
 let myAny = 5;
 myAny = "fünf";
 console.log('myAny :>> ', myAny);
+console.log("------------------functions-------------------------");
+let greet;
+greet = () => {
+    console.log("hallo");
+};
+const add = (a, b, c) => {
+    return a + b; // : means, this function will return a number
+}; // void means, it returns nothing
+console.log('add(5,6); :>> ', add(5, 6));
+console.log("------------------type-------------------------");
+const minus = (a, b, c) => {
+    return a - b;
+};
+console.log("------------------function signatures---------------------");
+let calc2;
+calc2 = (numOne, numTwo) => {
+    return numOne + numTwo;
+};
+// let logDetails:(obj:Object)=>void;
+let logDetails;
+logDetails = (ninja) => {
+    console.log(`${ninja.name} is ${ninja.age} years old`);
+};

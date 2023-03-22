@@ -6,5 +6,5 @@
 //--------tsconfig.json setting
 "outDir": "./public"
 "rootDir":"./src"
-"include": ["src"]          //create js file only ts files in src
+"include": ["src"]          //create js files for only ts files in src
 ------------------------------------------------

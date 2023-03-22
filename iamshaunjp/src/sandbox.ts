@@ -70,3 +70,37 @@ console.log("------------------any-------------------------");
 let myAny:any=5;
 myAny="fünf";
 console.log('myAny :>> ', myAny);
+
+console.log("------------------functions-------------------------");
+let greet: Function;
+
+greet = ()=>{
+    console.log("hallo");
+}
+
+const add=(a:number, b:number, c?:number|string):number=>{          // ? makes the parameter optioanal
+    return a+b;                                                     // : means, this function will return a number
+}                                                                   // void means, it returns nothing
+console.log('add(5,6); :>> ', add(5,6));
+
+console.log("------------------type-------------------------");
+type StringOrNumber = number|string;
+const minus=(a:number, b:number, c?:StringOrNumber):number=>{          
+    return a-b;                                                     
+}
+
+console.log("------------------function signatures---------------------");
+
+let calc2:(a:number, b:number)=>number;
+calc2=(numOne:number, numTwo:number):number=>{
+    return numOne+numTwo;
+}
+
+// let logDetails:(obj:Object)=>void;
+let logDetails:(obj:{name:string, age:number})=>void;
+
+type person = {name:string, age:number};
+logDetails=(ninja:person)=>{
+    console.log(`${ninja.name} is ${ninja.age} years old`);
+}
+

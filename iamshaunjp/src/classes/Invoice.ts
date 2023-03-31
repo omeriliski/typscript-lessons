@@ -1,3 +1,5 @@
+import {IHasFormatter} from "../interfaces/HasFormatter";
+
 // class Invoice {
 //     readonly client: string;
 //     private details: string;
@@ -13,7 +15,7 @@
 // }
 
 //instead of this class we can write it like this shortly
-export class Invoice {
+export class Invoice implements IHasFormatter {
     constructor(
         readonly client: string,
         private details: string,

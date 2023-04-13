@@ -7,6 +7,6 @@ type PositionProps={
 
 export const TemplateLiterals = ({position}:PositionProps) => {
     return ( 
-        <div>position: ${position}</div>
+        <div>position: {position}</div>
      )
 }

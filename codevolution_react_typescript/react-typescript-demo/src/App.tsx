@@ -12,6 +12,8 @@ import { DomRef } from './components/useRef/domRef';
 import { MyClassComp } from './components/classComp/myClassComp';
 import { Generics } from './components/gerenics/generics';
 import { TemplateLiterals } from './components/templateLiterals/templateLiterals';
+import { CustomButton } from './components/html/button';
+import { CustomButton2 } from './components/html/customComponent';
 import './App.css';
 
 function App() {
@@ -37,6 +39,8 @@ function App() {
         <MyClassComp message='My Count is: '/>
         <Generics items={items}/>
         <TemplateLiterals position="center-top"/>
+        <CustomButton variant="secondary" onClick={()=>console.log("Halloo")}>My Custom Button</CustomButton>
+        <CustomButton2 variant='primary' onClick={()=>console.log("hallo 2")}>My Custon Button2</CustomButton2>
       </div>
     </TestContextProvider>
   );

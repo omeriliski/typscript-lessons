@@ -9,9 +9,13 @@ import { LoginState } from './components/loginState';
 import { Counter } from './components/useReducer/counter';
 import { TestContextProvider } from './components/context/testContext';
 import { DomRef } from './components/useRef/domRef';
+import { MyClassComp } from './components/classComp/myClassComp';
+import { Generics } from './components/gerenics/generics';
+import { TemplateLiterals } from './components/templateLiterals/templateLiterals';
 import './App.css';
 
 function App() {
+  const items=["Ankara", "izmir", "istanbul"];
   return (
     <TestContextProvider>
       <div className="App">
@@ -30,6 +34,9 @@ function App() {
         <LoginState />
         <Counter/>
         <DomRef/>
+        <MyClassComp message='My Count is: '/>
+        <Generics items={items}/>
+        <TemplateLiterals position="center-top"/>
       </div>
     </TestContextProvider>
   );
